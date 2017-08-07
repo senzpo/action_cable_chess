@@ -20,6 +20,7 @@ class Game
   end
 
   def self.make_move(uuid, data)
+    puts "From #{uuid} with #{data}"
     opponent = opponent_for(uuid)
     move_string = "#{data["from"]}-#{data["to"]}"
 
